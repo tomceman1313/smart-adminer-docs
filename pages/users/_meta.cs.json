@@ -4,13 +4,14 @@
 	"users": "👥 Uživatelé",
 	"employees": "🙍‍♂️ Zaměstnanci",
 	"vacancies": "📋 Inzerce pracovních míst",
+	"articles": "📰 Články a události",
 	"gallery": "🖼 Galerie",
 	"documents": "📁 Dokumenty",
-	"notifications": "⚠ Notifikace",
-	"pricelist": "🏷 Ceník",
 	"pages": "🖥 Stránky",
-	"articles": "📰 Články a události",
+	"pricelist": "🏷 Ceník",
+	"notifications": "⚠ Notifikace",
 	"products": "👔 Produkty",
 	"orders": "💸 Objednávky",
-	"settings": "⚙ Nastavení"
+	"settings": "⚙ Nastavení",
+	"components": "🗃 Komponenty"
 }

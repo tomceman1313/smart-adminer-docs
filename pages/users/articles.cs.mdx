@@ -4,46 +4,55 @@ import { Callout } from 'nextra/components'
 
 V rámci těchto sekcí je možné spravovat články a události. Jelikož je funkcionalita událostí totožná s články, jsou dokumentovány v rámci jednotné sekce.
 
-Pro inzerát je možné definovat následující informace:
+Pro článek / událost je možné definovat následující informace:
 
-- Název (povinné pole)
-- Popisek (povinné pole)
+- Titulek (povinné pole)
+- Popisek
 - Datum zveřejnění (povinné pole)
-- Obrázek (povinné pole)
-- Tělo inzerátu (povinné pole)
-- Viditelnost inzerátu
+- Kategorie (povinné pole)
+- Titulní obrázek (povinné pole)
+- Tělo článku / události (povinné pole)
+- Galerie článku / události
+- Viditelnost
+
+<Callout type="info" emoji="💡">
+   Stránka obsahuje komponentu **Kategorií**. Více informací o této komponentě můžete zjistit **[zde](/users/components/categories)**
+</Callout>
+
+<Callout type="info" emoji="💡">
+   Stránka obsahuje komponentu **Filtračního panelu**. Více informací o této komponentě můžete zjistit **[zde](/users/components/filter)**
+</Callout>
+
+<Callout type="info" emoji="💡">
+   Stránka obsahuje komponentu **Editor obrázků**. Více informací o této komponentě můžete zjistit **[zde](/users/components/image_editor)**
+</Callout>
 
 ## Přidání nového článku / události
 
-1. Klikněte na zelené tlačítko ➕, které se nachází na obrazovce vpravo dole.
+1. Klikněte na zelené tlačítko ➕, které se nachází na obrazovce vpravo dole (dojde k přesměrování na stránku tvorby nového článku).
 
-![Hello](/images/vacancies-new.PNG)
+![Hello](/images/articles.PNG)
 
 2. Zadejte požadované informace do formuláře
-
-![Hello](/images/vacancies-new-form.PNG)
-
-3. Pro zobrazení náhledu inzerátu klikněte na modré tlačítko **Náhled inzerátu**
+3. Pro zobrazení náhledu klikněte na modré tlačítko **Náhled článku / události**
 4. Pro uložení klikněte na zelené tlačítko **Vytvořit**
 
 
-## Editace inzerátu
+## Editace článku / události
 
-1. Vyberte požadováný inzerát v seznamu a klikněte na zelené tlačítko s ikonou tužky
+1. Klikněte na požadováný článek / událost v seznamu
 2. Upravte ve formuláři informace
-3. Uložte kliknutím na zelené tlačítko **Uložit**
+3. Smazání obrázku z galerie provedete kliknutím na příslušní obrázek, následně se objeví ve spodní části obrázku červené tlačítko s ikonou koše. 
+4. Uložte kliknutím na zelené tlačítko **Uložit**
 
-![Hello](/images/vacancies-edit-form.PNG)
+<Callout type="info" emoji="💡">
+  V rámci pole pro výběr titulního obrázku můžete otevřít nástroj pro ořez obrázku kliknutím na prostřední modré tlačítko.
+</Callout>
 
-## Odstranění inzerátu
+![Hello](/images/articles-edit.PNG)
 
-První postup:
+## Odstranění článku / události
 
-1. Najděte požadováný inzerát v seznamu a klikněte na červené tlačítko s ikonou koše
-2. Potvrďte smazání tlačítkem **Potvrdit**
-
-Druhý postup:
-
-1. Vyberte požadováný inzerát v seznamu a klikněte na zelené tlačítko s ikonou tužky
-2. Klikněte na červené tlačítko **Smazat**
+1. Klikněte na požadováný článek / událost v seznamu
+2. Sjeďte na konec formuláře a klikněte na červené tlačítko **Smazat**
 3. Potvrďte smazání tlačítkem **Potvrdit**
