@@ -1,0 +1,36 @@
+import { Callout } from 'nextra/components'
+
+# Přizpůsobení
+
+SmartAdminer lze zcela přizpůsobit vašim přáním.
+
+
+## CSS přizpůsobení
+
+Pro přizpůsobení vzhledu systému budete muset změnit CSS soubory.
+
+Všechny globální styly jsou definovány v `/pages/index.css`
+
+Styly komponent jsou umístěny ve stejné složce jako komponenta samotná.
+Pokud je komponenta malá nebo není znovu použitelná, je velmi pravděpodobné, že zdrojové styly jsou ve sdíleném souboru se styly jiných komponent.
+Nejjednodušší způsob, jak najít soubor CSS, který potřebujete změnit, je přejít do souboru jsx komponenty a zjistit, které soubory jsou importovány.
+
+## Jiné změny admin panelu
+
+Pro přizpůsobení komponent a stránek můžete použít dostupné komponenty nebo si můžete vytvořit své vlastní.
+
+Komponenty formulářů jsou umístěny ve složce `/src/components/basic/`.
+
+Větší opakovaně použitelné komponenty jsou umístěny ve složce `/src/components/common/`.
+
+## Verze lokalizací
+
+SmartAdminer podporuje tyto jazyky:
+
+- Angličtina 
+- Čeština
+
+<Callout type="info" emoji="ℹ️">
+Nový jazyk lze přidat do `/src/locales/`, kde vytvoříte novou složku se soubory JSON a souborem načítání JS
+</Callout>
+

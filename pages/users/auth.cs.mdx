@@ -1,0 +1,27 @@
+import { Callout } from 'nextra/components'
+
+# Role a práva
+
+V rámci této oblasti jsou řešena přístupová práva jednotlivých rolí.
+
+Uživatel má možnost vytvořit si vlastní role a přiřadit jim práva dle svého uvážení. 
+Role **Admin** má dle výchozího nastavení přidělena veškerá práva.
+
+Tabulka práv je rozdělena do sloupců dle druhů operací. Těmito druhy je:
+
+- Čtení - je umožněno číst uložený obsah (např. systém uživateli dovolí zobrazit si přehled článků) 
+- Vytváření - je umožněno vytvářet nový obsah (např. systém uživateli umožní vytvořit nový článek) 
+- Upravování - je umožněno editovat existující obsah (např. systém uživateli umožní upravit článek) 
+- Odstraňování - je umožněno odstranit dostupný obsah (např. systém uživateli umožní odstranit článek) 
+
+## Změna práv role
+
+Pro změnu práva role klikněte na ikonu zaškrtnutí či křížku.
+Pokud je zobrazena zelená ikona zaškrtnutí ☑ příslušná role má právo danou operaci provést. Pokud je zobrazena červená ikona ❌, role danou operaci provádět nemůže.
+
+<Callout type="info" emoji="💡">
+  Pokud role nemá zakázáno provádět jakoukoliv operaci v rámci dané části obsahu, je pro ni tato část systému kompletně skryta a v navigačním menu se nezobrazuje.
+</Callout>
+
+
+![Hello](/images/auth-rights.PNG)

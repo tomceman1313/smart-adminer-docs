@@ -1,0 +1,64 @@
+import { Steps } from "nextra/components";
+
+# Nasazení
+
+Tento průvodce nasazením je navržen tak, aby vám umožnil nasadit SmartAdminer na tradiční hostingové servery nebo na preferovaného poskytovatele hostingu během několika minut.
+
+## Požadavky na hosting
+
+    - PHP
+    - MySQL
+    - phpMyAdmin
+
+<Steps>
+### Nastavte konfigurační proměnné na produkční hodnoty
+
+    ```php
+    // development
+    //$path = '../public';
+    // production
+    $path = '../';
+    ```
+
+    ```
+    /.env
+    REACT_APP_API_URL=https://{your_domain}/admin
+    REACT_APP_PUBLIC_PATH=https://{your_domain}/admin
+    ```
+
+### Spusťte build
+
+    ```bash
+    npm run build
+    ```
+
+### Přesuňte vytvořené soubory na Váš hosting
+
+    Produkční verze SmartAdmineru je nyní dostupná v adresáři `/build`.
+    Nahrajte všechny soubory a složky na svůj hosting.
+
+### Exportujte lokální databázi
+
+Pokud máte připravená data, která chcete použít na produkci, exportujte svou databázi kliknutím na export v phpMyAdmin.
+
+### Vytvořte novou databázi
+
+Přejděte na svůj hosting a vytvořte novou databázi. Poté přejděte do svého phpMyAdmin a importujte exportovaný soubor sql.
+Měli byste mít všechna svá data dostupná v produkční databázi.
+
+### Nastavte připojení k databázi
+
+Pro připojení k databázi musíte změnit proměnné prostředí API:
+```
+    /api/.env
+    DB_HOST=localhost
+    DB_NAME=db_name
+    DB_USER=username
+    DB_PASSWORD=password
+
+    DEV_MODE=0
+```
+
+### Vše je hotovo 🎉
+
+</Steps>

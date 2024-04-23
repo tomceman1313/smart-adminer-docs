@@ -1,0 +1,66 @@
+import { Steps } from "nextra/components";
+
+
+# Zprovoznění systému
+
+V tomto návodu se dozvíte, jak zprovoznit SmartAdminer na Vašem lokálním zařízení během pár minut.
+
+## Požadavky
+
+- PHP
+- Node.js 16+
+- MySQL spuštěné na 
+- přístup do phpMyAdmin
+
+<Steps>
+### Stažení zdrojového kódu
+
+```bash
+git clone https://github.com/tomceman1313/smart-adminer.git
+```
+
+### Přesuňte se do smart-adminer složky
+
+```bash
+cd smart-adminer
+```
+ 
+### Nainstaluje knihovny
+ 
+```bash
+npm install
+```
+
+### Vytvořte databázi
+
+Přejděte do svého phpMyAdmin a vytvořte novou databázi
+Poté importujte strukturu databáze ze souboru umístěného v: `/api/database/config.sql`
+
+Po tomto kroku máte databázi připravenou.
+
+### Změňte konfigurační proměnné backendu
+
+Změňte proměnné `/api/.env` na správné hodnoty
+
+
+### Změňte konfigurační proměnné frontendu
+
+Změňte proměnné `.env` na správné hodnoty
+
+`REACT_APP_API_URL` - Definuje, na jaké url adrese běží api
+
+Pokud je API dostupné na `localhost:4300/api/...`, pak hodnota této proměnné bude `REACT_APP_API_URL=localhost:4300`
+
+`REACT_APP_PUBLIC_PATH` - Definuje, kde se nachází veřejná složka.
+
+Výchozí hodnota v `REACT_APP_PUBLIC_PATH="/admin"`, protože panel pro správu je dostupný na adrese `http://localhost or domain name/admin`
+
+### Vše je připraveno 🎉
+
+Chcete-li spustit aplikaci SmartAdminer, spusťte ve složce projektu následující příkaz:
+
+```bash
+npm start
+```
+
+</Steps>

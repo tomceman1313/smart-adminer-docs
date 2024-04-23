@@ -1,0 +1,64 @@
+import { Steps } from "nextra/components";
+
+# Deployment
+
+This deployment guide is designed to let you deploy SmartAdminer on traditional hosting servers or your preferred hosting provider in a few minutes.
+
+## Hosting Requirements
+
+    - PHP
+    - MySQL
+    - phpMyAdmin
+
+<Steps>
+### Set environment variables to production values
+
+    ```php
+    // development
+    //$path = '../public';
+    // production
+    $path = '../';
+    ```
+
+    ```
+    /.env
+    REACT_APP_API_URL=https://{your_domain}/admin
+    REACT_APP_PUBLIC_PATH=https://{your_domain}/admin
+    ```
+
+### Run build
+
+    ```bash
+    npm run build
+    ```
+
+### Move build files to hosting storage 
+
+    Production version of SmartAdminer is now available in `/build` directory.
+    Upload all files and folders to your hosting.
+
+### Export local database
+
+If you have prepared data which you want to use on production, export your database by clicking on export in phpMyAdmin.
+
+### Create new database
+
+Go to your hosting and create new database. Then go to your phpMyAdmin and import exported sql file.
+You should have all your data available in production database.
+
+### Set database connection
+
+For connection to your database you need to change api environment variables:
+```
+    /api/.env
+    DB_HOST=localhost
+    DB_NAME=db_name
+    DB_USER=username
+    DB_PASSWORD=password
+
+    DEV_MODE=0
+```
+
+### Everything is set 🎉
+
+</Steps>

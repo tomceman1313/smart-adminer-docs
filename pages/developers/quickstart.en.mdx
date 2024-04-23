@@ -1,0 +1,66 @@
+import { Steps } from "nextra/components";
+
+
+# Quickstart Guide
+
+This quickstart guide is designed to get you up and running with a SmartAdminer Project in a few minutes.
+
+## Requirements
+
+- PHP
+- Node.js 16+
+- MySQL running on your machine
+- access into the phpMyAdmin
+
+<Steps>
+### Clone the source repository
+
+```bash
+git clone https://github.com/tomceman1313/smart-adminer.git
+```
+
+### Go to the smart-adminer folder
+
+```bash
+cd smart-adminer
+```
+ 
+### Install all dependencies
+ 
+```bash
+npm install
+```
+
+### Create database
+
+Go to your phpMyAdmin and create a new database.
+Then import database structure from file located in: `/api/database/config.sql`
+
+After this step you have the database prepared. 
+
+### Change backend Environment variables
+
+Change `/api/.env` variables to correct values
+
+
+### Change frontend Environment variables
+
+Change `.env` variables to correct values
+
+`REACT_APP_API_URL` - Defines on which base url is api running. 
+
+If the API is available on `localhost:4300/api/...` then value of this variable will be `REACT_APP_API_URL=localhost:4300`
+
+`REACT_APP_PUBLIC_PATH` - Defines where the public folder is located. 
+
+Default value in `REACT_APP_PUBLIC_PATH="/admin"` because admin panel is available at `http://localhost or domain name/admin`
+
+### Everything is set 🎉
+
+To start SmartAdminer application, run the following command in the project folder:
+
+```bash
+npm start
+```
+
+</Steps>
