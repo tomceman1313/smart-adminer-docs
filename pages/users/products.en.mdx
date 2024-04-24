@@ -1,0 +1,123 @@
+import { Callout } from 'nextra/components'
+
+# Products
+
+Within this section you can manage products, list of manufacturers and categories.
+
+The following information can be defined for individual products:
+
+**Základní informace:**
+- Name (required)
+- Description (required)
+- Manufacturer (required)
+- Category 
+- Visibility
+- Detail description
+- Images (required)
+
+**Varianty:**
+- Name 
+- Number of pieces in stock (required)
+- Price (required)
+
+**Parametry:**
+- Name
+- Value
+
+<Callout type="info" emoji="💡">
+   The page contains a **Categories** component. You can find out more information about this component **[here](/users/components/categories)**
+</Callout>
+
+## Adding a new product
+
+1. Click the green ➕ button located on the bottom right of the screen (you will be redirected to the new product creation page)
+
+![Hello](/images/products.PNG)
+
+2. Fill out the form (input fields, variants, parameters...)
+3. Click the green **Create** button to save
+
+## Product editing
+
+1. For the selected product in the list, click the **Detail** button
+2. Edit the product information to the desired status
+3. Click the green **Save** button
+
+## Product removal
+
+1. For the selected product in the list, click the **Delete** button
+2. Confirm the deletion by clicking the **Confirm** button
+
+## Product variants
+
+Each product must contain at least one variant. The variant is used to distinguish different variants of the product (it can be, for example, size or performance).
+
+Individual variants can be added, edited, sorted and deleted within the available component.
+
+<Callout type="warning" emoji="⚠">
+   Any changes within the modification of variants are only saved by clicking the **Save** button at the end of the form
+</Callout>
+
+
+![Hello](/images/variant.PNG)
+
+#### Adding a variant
+
+1. Fill in the name, quantity and price fields
+2. Click the green **Add** button
+
+#### Modification of variant
+
+1. Click on the desired input field of the variant you want to edit
+2. Overwrite the value
+
+#### Changing the order of variants
+
+1. Click the button with the arrow pointing in the direction you want to move the variant within the order
+
+
+#### Variant removal
+
+1. Click the red button 🗑
+2. Confirm the deletion by clicking the **Confirm** button
+
+## Variant parameters
+
+It is possible to add, edit, sort and delete parameters for individual variants.
+
+<Callout type="info" emoji="💡">
+   First, create all the variants and then create the parameters (this way you avoid manually adding parameters for individual variants).
+</Callout>
+
+<Callout type="warning" emoji="⚠">
+   Any changes to the parameters are saved only by clicking the **Save** button at the end of the form
+</Callout>
+
+![Hello](/images/params.PNG)
+
+#### Switching the list of parameters according to variants
+
+To display the parameters of individual variants, click on the name of the relevant variant in the upper part of the container with parameters
+
+#### Adding a parameter
+
+1. Fill in the name of the parameter
+2. If you want to add the given parameter to all variants, check the box ☑ **Add parameter to all variants**
+3. Click the green **Add** button
+
+#### Editing a parameter
+
+1. Click on the required input field of the parameter you want to edit
+2. Overwrite the value
+
+#### Changing the order of parameters
+
+1. Click the button with the arrow pointing in the direction you want to move the parameter within the order
+
+
+#### Deleting a parameter
+
+1. Click the red button 🗑
+2. Confirm the deletion by clicking the **Confirm** button
+
+

@@ -1,0 +1,66 @@
+import { Callout } from 'nextra/components'
+
+# Objednávky
+
+V rámci této sekce je možné spravovat přijaté objednávky.
+
+Pro článek / událost je možné definovat následující informace:
+
+**Informace o objednávce:**
+- Seznam objednaných produktů
+- Stav (povinné pole)
+- Typ platby (povinné pole)
+- Způsob doručení (povinné pole)
+- Datum objednání (povinné pole)
+- Datum odeslání
+- Datum dokončení
+- Poznámky
+
+**Fakturační údaje**
+- Křestní jméno (povinné pole)
+- Příjmení (povinné pole)
+- Telefon (povinné pole)
+- Email (povinné pole)
+- Adresa (povinné pole)
+- Město (povinné pole) 
+- PSČ (povinné pole)
+
+**Doručovací údaje:**
+- Křestní jméno
+- Příjmení
+- Adresa
+- Město
+- PSČ
+
+**Nákup na firmu:**
+- Název (povinné pole)
+- IČO (povinné pole)
+- DIČ
+
+## Filtrování objednávek
+
+Filtrovat lze na základě čísla objednávky, data přijetí, statusu, druhu dopravy a způsobu platby.
+
+1. Klikněte na hlavičku tabulky s objednávkami (na pravé straně se zobrazí zelený kontejner)
+2. Zvolte položky, dle kterých chcete objednávky Filtrovat
+3. Klikněte na tlačítko **Filtrovat** v levém dolním rohu kontejneru
+4. Zrušení filtru provedete kliknutím na tlačítko **Reset** v pravém dolním rohu kontejneru
+
+![Hello](/images/orders-filter.PNG)
+
+## Upravení objednávky
+
+1. Klikněte v tabulce na požadovanou objednávku
+2. Upravte informace ve formuláři dle potřeb
+3. Klikněte na zelené tlačítko **Uložit**
+
+<Callout type="warning" emoji="💡">
+  Objednávku je možné libovolně editovat, avšak kromě výjimečných případů byste měli měnit pouze **stav** a **datum odeslání** a **dokončení**.
+</Callout>
+
+## Odstranění objednávky
+
+1. Klikněte v tabulce na požadovanou objednávku
+2. Klikněte na červené tlačítko **Smazat**
+3. Potvrďte odstranění kliknutím na tlačítko **Potvrdit**
+

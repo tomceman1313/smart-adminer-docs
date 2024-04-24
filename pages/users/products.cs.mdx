@@ -1,0 +1,123 @@
+import { Callout } from 'nextra/components'
+
+# Produkty
+
+V rámci této sekce můžete spravovat produkty, seznam výrobců a kategorie.
+
+Pro jednotlivé produkty je možné definovat následující informace:
+
+**Základní informace:**
+- Název (povinné pole)
+- Popisek (povinné pole)
+- Výrobce (povinné pole)
+- Kategorie 
+- Viditelnost produktu
+- Detailní popis
+- Obrázky (povinné pole)
+
+**Varianty:**
+- Název 
+- Počet kusů skladem (povinné pole)
+- Cena (povinné pole)
+
+**Parametry:**
+- Název
+- Hodnota
+
+<Callout type="info" emoji="💡">
+   Stránka obsahuje komponentu **Kategorií**. Více informací o této komponentě můžete zjistit **[zde](/users/components/categories)**
+</Callout>
+
+## Přidání nového produktu
+
+1. Klikněte na zelené tlačítko ➕, které se nachází na obrazovce vpravo dole (dojde k přesměrování na stránku tvorby nového produktu).
+
+![Hello](/images/products.PNG)
+
+2. Vyplňte formulář (vstupní pole, varianty, parametry...)
+3. Pro uložení klikněte na zelené tlačítko **Vytvořit**
+
+## Editace produktu
+
+1. U vybraného produktu v seznamu klikněte na tlačítko **Detail**
+2. Upravte informace o produktu na požadovaný stav
+3. Klikněte na zelené tlačítko **Uložit**
+
+## Odstranění produktu
+
+1. U vybraného produktu v seznamu klikněte na tlačítko **Smazat**
+2. Potvrďte odstranění kliknutím na tlačítko **Potvrdit**
+
+## Varianty produktu
+
+Každý produkt musí obsahovat minimálně jednu variantu. Varianta slouží k rozlišení různých variant produktu (může se jednat o například velikost nebo výkon).
+
+Jednotlivé varianty lze v rámci dostupného komponenty přidávat, upravovat, seřazovat a odstraňovat.
+
+<Callout type="warning" emoji="⚠">
+   Jakékoliv změny v rámci úprav variant se uloží až kliknutím na tlačítko **Uložit** na konci formuláře
+</Callout>
+
+
+![Hello](/images/variant.PNG)
+
+#### Přidání varianty
+
+1. Vyplňte pole názvu, počtu kusů a cenu
+2. Klikněte na zelené tlačítko **Přidat**
+
+#### Upravení varianty
+
+1. Klikněte na požadované vstupní pole varianty, kterou hodláte upravit
+2. Přepište hodnotu
+
+#### Změna pořadí variant
+
+1. Klikněte na tlačítko se šipkou směřující směrem, kterým chcete variantu v rámci pořadí přesunout
+
+
+#### Odstranění varianty
+
+1. Klikněte na červené tlačítko 🗑
+2. Potvrďte odstranění kliknutím na tlačítko **Potvrdit** 
+
+## Parametry variant
+
+Pro jednotlivé varianty je možné přidat, upravit, seřadit a odstranit parametry.
+
+<Callout type="info" emoji="💡">
+Nejprve si vytvořte veškeré varianty a následně až vytvářejte parametry (předejdete tak manuálnímu přidávání parametrů pro jednotlivé varianty).
+</Callout>
+
+<Callout type="warning" emoji="⚠">
+   Jakékoliv změny v rámci úprav parametrů se uloží až kliknutím na tlačítko **Uložit** na konci formuláře
+</Callout>
+
+![Hello](/images/params.PNG)
+
+#### Přepínání seznamu parametrů dle variant
+
+Pro zobrazení parametrů jednotlivých variant klikněte na název příslušné varianty v horní částí kontejneru s parametry
+
+#### Přidání parametru
+
+1. Vyplňte název parametru
+2. Pokud chcete daný parametr vložit všem variantám, zaškrtněte políčko ☑ **Přidat parametr všem variantám**
+3. Klikněte na zelené tlačítko **Přidat**
+
+#### Upravení parametru
+
+1. Klikněte na požadované vstupní pole parametru, kterou hodláte upravit
+2. Přepište hodnotu
+
+#### Změna pořadí parametrů
+
+1. Klikněte na tlačítko se šipkou směřující směrem, kterým chcete parametr v rámci pořadí přesunout
+
+
+#### Odstranění parametru
+
+1. Klikněte na červené tlačítko 🗑
+2. Potvrďte odstranění kliknutím na tlačítko **Potvrdit**
+
+
